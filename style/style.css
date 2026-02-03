@@ -4,7 +4,7 @@ html {
 
 body {
     /* Go up one folder (..) then into img folder */
-    background-image: url('..red-hearts-happy-3840x2160-9266.jpg'); 
+    background-image: url('../img/red-hearts-happy-3840x2160-9266.jpg'); 
     
     /* Ensures the image covers the whole screen */
     background-size: cover;
