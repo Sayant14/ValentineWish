@@ -3,11 +3,14 @@ html {
 }
 
 body {
-  margin: 0;
-  font-family: "Work Sans", sans-serif;
-  background-image: url("red-hearts-happy-3840x2160-9266.jpg"); /* Add this line */
-  background-size: cover; /* Ensures the image fills the screen */
-  background-repeat: no-repeat;
+    /* Go up one folder (..) then into img folder */
+    background-image: url('../img/YOUR_IMAGE_NAME.jpg'); 
+    
+    /* Ensures the image covers the whole screen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .container {
