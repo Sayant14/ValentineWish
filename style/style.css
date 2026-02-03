@@ -5,6 +5,9 @@ html {
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  background-image: url("your-image-name.jpg"); /* Add this line */
+  background-size: cover; /* Ensures the image fills the screen */
+  background-repeat: no-repeat;
 }
 
 .container {
