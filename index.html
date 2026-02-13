@@ -127,7 +127,7 @@
         <p>LOVE U MY CUTIEEPIEEEE♥️♥️♥️.</p>
         <p id="replay">SO, Will u Marry ME♥️♥️♥️😘.</p>
         <p class="last-smile">:)</p>
-        <div style="margin-top: 30px;">
+        <div id="yesContainer" style="display: none; margin-top: 30px;">
     
     <button id="yesBtn" onclick="revealGif()" style="
         background-color: #ff4081; 
@@ -149,12 +149,23 @@
 </div>
 
 <script>
+    // 1. Function to show the GIF when button is clicked
     function revealGif() {
-        // Hide the button
         document.getElementById('yesBtn').style.display = 'none';
-        // Show the GIF
         document.getElementById('secretGif').style.display = 'block';
     }
+
+    // 2. Magic Script to wait for the end of the animation
+    const checkAnimation = setInterval(() => {
+        // Find the "Will u Marry Me" text
+        const lastText = document.getElementById("replay");
+        
+        // If the text is visible (opacity is 1), show the button!
+        if (lastText && window.getComputedStyle(lastText).opacity > 0.5) {
+            document.getElementById("yesContainer").style.display = "block";
+            clearInterval(checkAnimation); // Stop checking
+        }
+    }, 1000); // Check every 1 second
 </script>
       </div>
     </div>
