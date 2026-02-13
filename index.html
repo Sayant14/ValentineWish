@@ -127,6 +127,35 @@
         <p>LOVE U MY CUTIEEPIEEEE♥️♥️♥️.</p>
         <p id="replay">SO, Will u Marry ME♥️♥️♥️😘.</p>
         <p class="last-smile">:)</p>
+        <div style="margin-top: 30px;">
+    
+    <button id="yesBtn" onclick="revealGif()" style="
+        background-color: #ff4081; 
+        color: white; 
+        border: none; 
+        padding: 15px 30px; 
+        font-size: 20px; 
+        font-weight: bold;
+        border-radius: 50px; 
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4);">
+        YES! ❤️
+    </button>
+
+    <div id="secretGif" style="display: none; margin-top: 20px;">
+        <img src="img/NAME_OF_YOUR_GIF.gif" style="width: 100%; max-width: 300px; border-radius: 15px;" alt="Love Gif">
+    </div>
+
+</div>
+
+<script>
+    function revealGif() {
+        // Hide the button
+        document.getElementById('yesBtn').style.display = 'none';
+        // Show the GIF
+        document.getElementById('secretGif').style.display = 'block';
+    }
+</script>
       </div>
     </div>
     <audio id="bg-music" loop>
